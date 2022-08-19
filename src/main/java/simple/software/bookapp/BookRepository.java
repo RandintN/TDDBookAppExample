@@ -1,2 +1,9 @@
-package simple.software.bookapp;public interface BookRepository {
+package simple.software.bookapp;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BookRepository extends JpaRepository<Book, Long> {
+
 }
